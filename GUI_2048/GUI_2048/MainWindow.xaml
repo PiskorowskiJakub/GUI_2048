@@ -1,0 +1,36 @@
+﻿<Window x:Class="GUI_2048.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_2048"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <Grid Background="Silver">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="110"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="125"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" Text="2048" TextAlignment="Center" VerticalAlignment="Top" Width="200"/>
+        <Button Click="start" Content="Start" Grid.Column="1" Margin="40,5,0,5" Grid.Row="1" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
+        <Button Click="sterowanie" Content="Sterowanie" Grid.Column="1" Margin="40,5,0,5" Grid.Row="3" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
+        <Button Click="informacje" Content="Informacje" Grid.Column="1" Margin="40,5,0,5" Grid.Row="5" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
+        <Button Click="wyjscie" Content="Wyjście" Grid.Column="1" Margin="40,5,0,5" Grid.Row="7" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
+        
+    </Grid>
+
+    
+    
+</Window>

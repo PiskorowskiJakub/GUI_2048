@@ -1,0 +1,37 @@
+﻿<Window x:Class="GUI_2048.WyborPlanszy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_2048"
+        mc:Ignorable="d"
+        Title="WyborPlanszy" Height="450" Width="450">
+    <Grid Background="Silver">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="160"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" Text="Wybór planszy" TextAlignment="Center" VerticalAlignment="Top" Width="250"/>
+
+        <Button Click="Plansza4x4" Content="4 x 4" Grid.Column="1" HorizontalAlignment="Left" Height="30" FontSize="20" Margin="10,5,0,5" Grid.Row="1" VerticalAlignment="Top" Width="60"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="1" FontSize="15" TextWrapping="Wrap" Text="Standardowy rozmiar" VerticalAlignment="Top"/>
+
+        <Button Content="6 x 6" Grid.Column="1" HorizontalAlignment="Left" Height="30" FontSize="20" Margin="10,5,0,5" Grid.Row="3" VerticalAlignment="Top" Width="60"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="3" FontSize="15" TextWrapping="Wrap" Text="Niestandardowy rozmiar" VerticalAlignment="Top"/>
+
+        <Button Content="8 x 8" Grid.Column="1" HorizontalAlignment="Left" Height="30" FontSize="20" Margin="10,5,0,5" Grid.Row="5" VerticalAlignment="Top" Width="60"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="5" FontSize="15" TextWrapping="Wrap" Text="Niestandardowy rozmiar" VerticalAlignment="Top"/>
+
+        <Button Click="wyjscie" Content="Powrót" HorizontalAlignment="Left"  Margin="80,40,0,0" Grid.Row="6" Height="30" FontSize="20" VerticalAlignment="Top" Width="95" Grid.Column="1"/>
+    </Grid>
+</Window>
