@@ -6,50 +6,53 @@ using System.Threading.Tasks;
 
 namespace GUI_2048
 {
+
     class Board 
     {
-        User User = new User();
+       
         public int randNumber = 0;
         public int rand1 = 2;      // pierwsza losowa liczba
         public int rand2 = 4;      // druga losowa liczba
         public static int coordinateXnumber1, coordinateYnumber1;
         public static string[,] output = new string[9, 9];
 
-        public string ConvertBytes()
+        User User = new User();
+
+        public string ConvertBytes(int _sizeboard)
         {
             // Dictionary zamiast switch
-            for (int i = 1; i < 9; i += 2)
+            for (int i = 0; i <= _sizeboard; i += 1)
             {
-                for (int j = 1; j < 9; j += 2)
+                for (int j = 0; j <= _sizeboard; j += 1)
                 {
                     switch(User.board[i,j])
                     {
-                        case 0: return output[i,j] = " ";
-                        case 2: return output[i, j] = "2 kb";
-                        case 4: return output[i, j] = "4 kb";
-                        case 8: return output[i, j] = "8 kb";
-                        case 16: return output[i, j] = "16 kb";
-                        case 32: return output[i, j] = "32 kb";
-                        case 64: return output[i, j] = "64 kb";
-                        case 128: return output[i, j] = "128 kb";
-                        case 256: return output[i, j] = "256 kb";
-                        case 512: return output[i, j] = "512 kb";
-                        case 1024: return output[i, j] = "1 MB";
-                        case 2048: return output[i, j] = "2 MB";
-                        case 4096: return output[i, j] = "4 MB";
-                        case 8192: return output[i, j] = "8 MB";
-                        case 16384: return output[i, j] = "16 MB";
-                        case 32768: return output[i, j] = "32 MB";
-                        case 65536: return output[i, j] = "65 MB";
-                        default: return output[i, j] = " ";
+                        case 0: output[i,j] = "0"; break;
+                        case 2: output[i, j] = "2 kb"; break;
+                        case 4: output[i, j] = "4 kb"; break;
+                        case 8: output[i, j] = "8 kb"; break;
+                        case 16:  output[i, j] = "16 kb"; break;
+                        case 32: output[i, j] = "32 kb"; break;
+                        case 64: output[i, j] = "64 kb"; break;
+                        case 128: output[i, j] = "128 kb"; break;
+                        case 256: output[i, j] = "256 kb"; break;
+                        case 512: output[i, j] = "512 kb"; break;
+                        case 1024: output[i, j] = "1 MB"; break;
+                        case 2048: output[i, j] = "2 MB"; break;
+                        case 4096: output[i, j] = "4 MB"; break;
+                        case 8192: output[i, j] = "8 MB"; break;
+                        case 16384: output[i, j] = "16 MB"; break;
+                        case 32768: output[i, j] = "32 MB"; break;
+                        case 65536: output[i, j] = "65 MB"; break;
+                        default: output[i, j] = " "; break;
                     }
                 }
             }
             return output[3, 3] = " ";
         }
+
         
-       
-        
+
         public int RandValue()
         {
             Random rand = new Random();

@@ -35,7 +35,7 @@ namespace GUI_2048
 
 
 
-        
+
 
 
 
@@ -49,44 +49,47 @@ namespace GUI_2048
 
         private void KeyDown_Event(object sender, KeyEventArgs e)   // aktualizacja danych
         {
-            
 
-            Board.RandValue();    // losuje wartość 2 lub 4
+            /*
+                        Board.RandValue();    // losuje wartość 2 lub 4
 
-            Key.CheckKey(sizeBoard, e);    // sprawdzanie klawisza i wykonanie ruchu 
+                        Key.CheckKey(sizeBoard, e);    // sprawdzanie klawisza i wykonanie ruchu 
 
-            Key.Checkclear();   // sprawdzenie czy sa puste pola 
+                        Key.Checkclear();   // sprawdzenie czy sa puste pola 
 
-            if (Key.check_move > 0)         // Jesli wykonano jakis ruch
-            {
-                Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby      
-            }
+                        if (Key.check_move > 0)         // Jesli wykonano jakis ruch
+                        {
+                            Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby      
+                        }
 
-            Board.ConvertBytes();   // zamiana liczb na bajty
-            Board.UpdateBoard();      // Wprowadź nowe wartości do tablicy
-
+                        Board.ConvertBytes();   // zamiana liczb na bajty
+                        UpdateBoard();      // Wprowadź nowe wartości do tablicy
+                        */
         }
 
 
         public Plansza8x8()     // Inicjalizacja GUI
         {
-          //  InitializeComponent();
+            //  InitializeComponent();
+            /*
 
 
-            
 
-            sizeBoard = 3;
- 
-            User.CreateBoard(sizeBoard);     // wypełnienie tablicy zerami
+                        sizeBoard = 3;
 
-            Board.RandValue();    // losuje wartość 2 lub 4
+                        User.CreateBoard(sizeBoard);     // wypełnienie tablicy zerami
 
-            Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
+                        Board.RandValue();    // losuje wartość 2 lub 4
 
-            Board.ConvertBytes();   // zamiana liczba na bajty
-            Board.UpdateBoard();    // wyswietlenie zawartosci tablicy
+                        Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
 
+                        Board.ConvertBytes();   // zamiana liczba na bajty
+                        Board.UpdateBoard();    // wyswietlenie zawartosci tablicy
+            */
         }
+
+
+
 
         private void wyjscie(object sender, RoutedEventArgs e)
         {
@@ -94,5 +97,6 @@ namespace GUI_2048
             wyjscie.Show();
             this.Close();
         }
+
     }
 }

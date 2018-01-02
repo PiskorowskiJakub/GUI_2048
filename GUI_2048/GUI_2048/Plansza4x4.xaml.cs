@@ -40,40 +40,37 @@ namespace GUI_2048
 
 
         public int sizeBoard;
-        /*
+        
         User User = new User();
         Board Board = new Board();
         Key Key = new Key();
 
-        */
+        
         public void UpdateBoard()
         {
-            cell_00.Text = Board.output[0, 0];
-            cell_10.Text = output[1, 0];
-            cell_20.Text = output[2, 0];
-            cell_30.Text = output[3, 0];
+            cell_00.Text = "0";
+            cell_10.Text = Board.output[1, 0];
+            cell_20.Text = Board.output[2, 0];
+            cell_30.Text = Board.output[3, 0];
 
-            cell_01.Text = output[0, 1];
-            cell_11.Text = output[1, 1];
-            cell_21.Text = output[2, 1];
-            cell_31.Text = output[3, 1];
+            cell_01.Text = Board.output[0, 1];
+            cell_11.Text = Board.output[1, 1];
+            cell_21.Text = Board.output[2, 1];
+            cell_31.Text = Board.output[3, 1];
 
-            cell_02.Text = output[0, 2];
-            cell_12.Text = output[1, 2];
-            cell_22.Text = output[2, 2];
-            cell_32.Text = output[3, 2];
+            cell_02.Text = Board.output[0, 2];
+            cell_12.Text = Board.output[1, 2];
+            cell_22.Text = Board.output[2, 2];
+            cell_32.Text = Board.output[3, 2];
 
-            cell_03.Text = output[0, 3];
-            cell_13.Text = output[1, 3];
-            cell_23.Text = output[2, 3];
-            cell_33.Text = output[3, 3];
+            cell_03.Text = Board.output[0, 3];
+            cell_13.Text = Board.output[1, 3];
+            cell_23.Text = Board.output[2, 3];
+            cell_33.Text = Board.output[3, 3];
         }
 
         private void KeyDown_Event(object sender, KeyEventArgs e)   // aktualizacja danych
         {
-            User User = new User();
-            Board Board = new Board();
-            Key Key = new Key();
 
             Board.RandValue();    // losuje wartość 2 lub 4
 
@@ -86,7 +83,7 @@ namespace GUI_2048
                 Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby      
             }
 
-            Board.ConvertBytes();   // zamiana liczb na bajty
+            Board.ConvertBytes(sizeBoard);   // zamiana liczb na bajty
             UpdateBoard();      // Wprowadź nowe wartości do tablicy
 
         }
@@ -96,11 +93,6 @@ namespace GUI_2048
         {
             //  InitializeComponent();
 
-            User User = new User();
-            Board Board = new Board();
-            Key Key = new Key();
-
-
             sizeBoard = 3;
  
             User.CreateBoard(sizeBoard);     // wypełnienie tablicy zerami
@@ -109,12 +101,12 @@ namespace GUI_2048
 
             Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
 
-            Board.ConvertBytes();   // zamiana liczba na bajty
-            Board.UpdateBoard();    // wyswietlenie zawartosci tablicy
+            Board.ConvertBytes(sizeBoard);   // zamiana liczba na bajty
+            UpdateBoard();    // wyswietlenie zawartosci tablicy
 
         }
 
-        private void wyjscie(object sender, RoutedEventArgs e)
+        private void Wyjscie(object sender, RoutedEventArgs e)
         {
             MainWindow wyjscie = new MainWindow();
             wyjscie.Show();

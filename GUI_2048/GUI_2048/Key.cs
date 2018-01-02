@@ -15,9 +15,11 @@ using System.Windows.Shapes;
 
 namespace GUI_2048
 {
-    class Key : User
+    class Key
     {
-        public int board_clear;
+        
+
+        public int board_clear = 0;
         public int falsee = 0;
 
         public int check_y = 0;                                    // sprawdzenie po zmiennej y
@@ -32,15 +34,16 @@ namespace GUI_2048
         */
         public int check_move = 0;
 
+        User User = new User();
 
         public void Checkclear()
         {
-            board_clear = 0;            // Sprawdzenie czy sa puste pola
+                        // Sprawdzenie czy sa puste pola
             for (int i = 1; i < 9; i += 2)
             {
                 for (int j = 1; j < 9; j += 2)
                 {
-                    if (board[i, j] == emptyy)
+                    if (User.board[i, j] == User.emptyy)
                     {
                         board_clear += 1;
                     }
@@ -64,13 +67,13 @@ namespace GUI_2048
                         for (int max = _sizeBoard; max <= check_y; max--)
                         {
                             // jezeli 1 i ostatni wiersz jest taki sam 
-                            if (board[check_y, check_x] == board[max, check_x])
+                            if (User.board[check_y, check_x] == User.board[max, check_x])
                             {
                                 // sprawdzamy elementy tablicy miedzy 1 a ostatnim wierszem
                                 for (int i = check_y; i < max; i++)
                                 {
                                     // jezeli nie jest puste
-                                    if (board[i, check_x] != emptyy)
+                                    if (User.board[i, check_x] != User.emptyy)
                                     {
                                         falsee = 1;
                                     }
@@ -79,9 +82,9 @@ namespace GUI_2048
                                 if (falsee == 0)
                                 {
                                     // dodanie komorki wiersza 1 i ostatniego
-                                    board[check_y, check_x] += board[max, check_x];
+                                    User.board[check_y, check_x] += User.board[max, check_x];
                                     // ostatnia komorke wiersza wypelniamy zerami
-                                    board[max, check_x] = emptyy;
+                                    User.board[max, check_x] = User.emptyy;
                                 }
                             }
                         }

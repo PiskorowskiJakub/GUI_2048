@@ -50,7 +50,7 @@ namespace GUI_2048
         private void KeyDown_Event(object sender, KeyEventArgs e)   // aktualizacja danych
         {
             
-
+/*
             Board.RandValue();    // losuje wartość 2 lub 4
 
             Key.CheckKey(sizeBoard, e);    // sprawdzanie klawisza i wykonanie ruchu 
@@ -64,7 +64,7 @@ namespace GUI_2048
 
             Board.ConvertBytes();   // zamiana liczb na bajty
             Board.UpdateBoard();      // Wprowadź nowe wartości do tablicy
-
+*/
         }
 
 
@@ -72,7 +72,7 @@ namespace GUI_2048
         {
           //  InitializeComponent();
 
-
+/*
             
 
             sizeBoard = 3;
@@ -85,7 +85,7 @@ namespace GUI_2048
 
             Board.ConvertBytes();   // zamiana liczba na bajty
             Board.UpdateBoard();    // wyswietlenie zawartosci tablicy
-
+*/
         }
 
         private void wyjscie(object sender, RoutedEventArgs e)

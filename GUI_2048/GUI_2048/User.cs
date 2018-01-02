@@ -8,18 +8,18 @@ namespace GUI_2048
 {
     class User 
     {
-        public int emptyy; // pole puste
+        public int emptyy = 1; // pole puste
         //public string name;
-        public int points;
-        public int loadBoard;
-        public int sumPoint;
+     //   public int points;
+    //    public int loadBoard;
+     //   public int sumPoint;
 
         public static int[,] board = new int[9, 9];
 
         
         public void CreateBoard(int _sizeBoard)
         {
-            emptyy = 0;
+           
             // nadajemy wartoœæ 0000 (pole puste) tablicy "pole"
 
             for (int i = 0; i <= _sizeBoard; i++)
