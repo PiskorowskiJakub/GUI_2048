@@ -23,7 +23,7 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="125"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" Text="2048" TextAlignment="Center" VerticalAlignment="Top" Width="200"/>
+        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="200"><Run Text="2048 = "/><Span><Run Text="2"/></Span><Span Typography.Variants="Superscript"><Run Text="11"/></Span><LineBreak/><Run/></TextBlock>
         <Button Click="start" Content="Start" Grid.Column="1" Margin="40,5,0,5" Grid.Row="1" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
         <Button Click="sterowanie" Content="Sterowanie" Grid.Column="1" Margin="40,5,0,5" Grid.Row="3" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
         <Button Click="informacje" Content="Informacje" Grid.Column="1" Margin="40,5,0,5" Grid.Row="5" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>

@@ -60,7 +60,6 @@ namespace GUI_2048
                 {
                     for (check_x = 0; check_x <= _sizeBoard; check_x += 1)
                     {
-                        
                         // sprawdzamy wiersze od ostatniego do pierwszego
                         for (int max = _sizeBoard; max <= check_y; max--)
                         {
@@ -86,12 +85,6 @@ namespace GUI_2048
                                 }
                             }
                         }
-                            
-
-                            
-                        
-
-
                     }
                 }
             }
