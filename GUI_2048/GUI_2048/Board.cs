@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace GUI_2048
 {
-    class Board : User
+    class Board 
     {
+        User User = new User();
         public int randNumber = 0;
         public int rand1 = 2;      // pierwsza losowa liczba
         public int rand2 = 4;      // druga losowa liczba
@@ -21,7 +22,7 @@ namespace GUI_2048
             {
                 for (int j = 1; j < 9; j += 2)
                 {
-                    switch(board[i,j])
+                    switch(User.board[i,j])
                     {
                         case 0: return output[i,j] = " ";
                         case 2: return output[i, j] = "2 kb";
@@ -46,30 +47,9 @@ namespace GUI_2048
             }
             return output[3, 3] = " ";
         }
-
-        public void UpdateBoard()
-        {
-            cell_00.Text = output[0, 0];
-            cell_10.Text = output[1, 0];
-            cell_20.Text = output[2, 0];
-            cell_30.Text = output[3, 0];
-
-            cell_01.Text = output[0, 1];
-            cell_11.Text = output[1, 1];
-            cell_21.Text = output[2, 1];
-            cell_31.Text = output[3, 1];
-
-            cell_02.Text = output[0, 2];
-            cell_12.Text = output[1, 2];
-            cell_22.Text = output[2, 2];
-            cell_32.Text = output[3, 2];
-
-            cell_03.Text = output[0, 3];
-            cell_13.Text = output[1, 3];
-            cell_23.Text = output[2, 3];
-            cell_33.Text = output[3, 3];
-        }
-
+        
+       
+        
         public int RandValue()
         {
             Random rand = new Random();
@@ -96,8 +76,8 @@ namespace GUI_2048
                 coordinateXnumber1 = rand0.Next(0, _sizeBoard);
                 coordinateYnumber1 = rand0.Next(0, _sizeBoard);
 
-            } while (board[coordinateXnumber1, coordinateYnumber1] != emptyy);
-            board[coordinateXnumber1, coordinateYnumber1] = randNumber;
+            } while (User.board[coordinateXnumber1, coordinateYnumber1] != User.emptyy);
+            User.board[coordinateXnumber1, coordinateYnumber1] = randNumber;
 
         }
     }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
-        Title="Plansza4x4" Height="650" Width="650"
+        Title="Plansza6x6" Height="650" Width="650"
         KeyDown="KeyDown_Event">
 
     <Grid Background="Silver">

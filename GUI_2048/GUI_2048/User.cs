@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GUI_2048
 {
-    class User : Plansza4x4
+    class User 
     {
         public int emptyy; // pole puste
         //public string name;

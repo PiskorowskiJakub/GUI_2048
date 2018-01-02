@@ -18,7 +18,7 @@ namespace GUI_2048
     /// <summary>
     /// Interaction logic for Plansza4x4.xaml
     /// </summary>
-    public partial class Plansza4x4 : Window
+    public partial class Plansza8x8 : Window
     {
         /*
         public int pause; // zmienna tymczasowa
@@ -68,7 +68,7 @@ namespace GUI_2048
         }
 
 
-        public Plansza4x4()     // Inicjalizacja GUI
+        public Plansza8x8()     // Inicjalizacja GUI
         {
           //  InitializeComponent();
 
