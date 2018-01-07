@@ -72,6 +72,7 @@ namespace GUI_2048
 
         public void RandCoordinates(int _sizeBoard)
         {
+            ++_sizeBoard;
             do
             {
                 Random rand0 = new Random();

@@ -17,9 +17,9 @@ namespace GUI_2048
 {
     class Key
     {
-        
 
-        public int board_clear = 0;
+        public bool check_move = false;
+        public bool board_clear = false;
         public int falsee = 0;
 
         public int check_y = 0;                                    // sprawdzenie po zmiennej y
@@ -32,23 +32,28 @@ namespace GUI_2048
         public int check_x_priev, check_x_priev2, check_x_priev4;      // sprawdzenie poprzedniej wartosci zmiennej x
         public int check_y_priev, check_y_priev2, check_y_priev4;      // sprawdzenie poprzedniej wartosci zmiennej y
         */
-        public int check_move = 0;
+      //  public int check_move = 0;
 
         User User = new User();
 
-        public void Checkclear()
+        public void Checkclear(int _sizeBoard)
         {
-                        // Sprawdzenie czy sa puste pola
-            for (int i = 1; i < 9; i += 2)
+            board_clear = false;
+
+            // Sprawdzenie czy sa puste pola
+            for (int i = 0; i <= _sizeBoard; i++)
             {
-                for (int j = 1; j < 9; j += 2)
+                for (int j = 0; j <= _sizeBoard; j++)
                 {
                     if (User.board[i, j] == User.emptyy)
                     {
-                        board_clear += 1;
+                        board_clear = true;
                     }
                 }
             }
+
+            
+
         }
 
 
@@ -59,21 +64,21 @@ namespace GUI_2048
 
             if (_key1.Key == System.Windows.Input.Key.W || _key1.Key == System.Windows.Input.Key.Up)
             {
-                for (check_y = 0; check_y <= _sizeBoard; check_y++)
+                for (check_x = 0; check_x <= _sizeBoard; check_x++)
                 {
-                    for (check_x = 0; check_x <= _sizeBoard; check_x++)
+                    for (check_y = 0; check_y <= _sizeBoard; check_y++)
                     {
                         // sprawdzamy wiersze od ostatniego do pierwszego
                         for (int max = _sizeBoard; max >= check_y; max--)
                         {
-                            // jezeli 1 i ostatni wiersz jest taki sam 
-                            if (User.board[check_y, check_x] == User.board[max, check_x])
+                            // jezeli 1 i ostatni wiersz jest taki sam  i czy ostatni nie jest zerem
+                            if (User.board[check_y, check_x] == User.board[max, check_x] && User.board[max, check_x] != 0)
                             {
-                                // sprawdzamy elementy tablicy miedzy 1 a ostatnim wierszem
-                                for (int i = check_y; i < max; i++)
+                                // sprawdzamy elementy tablicy miedzy 2 a ostatnim wierszem
+                                for (int i = ++check_y; i < max; i++)
                                 {
                                     // jezeli nie jest puste
-                                    if (User.board[i, check_x] != User.emptyy)
+                                    if (User.board[i, check_x] != 0)
                                     {
                                         falsee = 1;
                                     }
@@ -84,16 +89,53 @@ namespace GUI_2048
                                     // dodanie komorki wiersza 1 i ostatniego
                                     User.board[check_y, check_x] += User.board[max, check_x];
                                     // ostatnia komorke wiersza wypelniamy zerem
-                                    User.board[max, check_x] = User.emptyy;
+                                    User.board[max, check_x] = 0;
+                                    // potwierdzenie ze ruch zostal wykonany
+                                    check_move = true;
                                 }
                             }
-                            // jezeli pierwszy wiersz i nastepny sa takie same 
-                            else if(User.board[check_y, check_x] == User.board[++check_y, check_x])
+                            // jezeli ostatni wiersz nie jest zerem a pierwszy jest pusty
+                            else if(User.board[max, check_x] != 0 && User.board[check_y, check_x] == 0)
+                            {
+                                // sprawdzamy elementy tablicy miedzy 2 a ostatnim wierszem
+                                for (int i = ++check_y; i < max; i++)
+                                {
+                                    // jezeli nie jest puste
+                                    if (User.board[i, check_x] != 0)
+                                    {
+                                        falsee = 1;
+                                    }
+                                }
+                                // jezeli srodkowe wiersze sa puste
+                                if (falsee == 0)
+                                {
+                                    // wstaw zawartosc wiersza ostatniego do pierwszego wiersza
+                                    User.board[check_y, check_x] = User.board[max, check_x];
+                                    // ostatni wiersz wypelnij zerem
+                                    User.board[max, check_x] = 0;
+                                    // potwierdzenie ze ruch zostal wykonany
+                                    check_move = true;
+                                }
+                            }
+                            // jezeli pierwszy wiersz i nastepny sa takie same i czy następny nie jest zerem
+                            else if(User.board[check_y, check_x] == User.board[++check_y, check_x] && User.board[++check_y, check_x] != 0)
                             {
                                 // dodaj pierszy i kolejny wiersz
                                 User.board[check_y, check_x] += User.board[++check_y, check_x];
                                 // kolejny wiersz wypelnij zerem
-                                User.board[++check_y, check_x] = User.emptyy;
+                                User.board[++check_y, check_x] = 0;
+                                // potwierdzenie ze ruch zostal wykonany
+                                check_move = true;
+                            }
+                            // jezeli pierwszy wiersz jest pusty a nastepny nie jest
+                            else if(User.board[check_y, check_x] == 0 && User.board[++check_y,check_x] != 0)
+                            {
+                                //wstaw zawartosc wiersza nastepnego w miejsce pierwszego
+                                User.board[check_y, check_x] = User.board[++check_y, check_x];
+                                // naste[ny wiersz wypelni zerem
+                                User.board[++check_y, check_x] = 0;
+                                // potwierdzenie ze ruch zostal wykonany
+                                check_move = true;
                             }
                         }
                     }
