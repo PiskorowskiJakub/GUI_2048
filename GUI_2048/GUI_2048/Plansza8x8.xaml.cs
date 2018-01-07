@@ -46,6 +46,82 @@ namespace GUI_2048
         Key Key = new Key();
 
 
+        public void UpdateBoard()
+        {
+
+            cell_00.Text = Board.output[0, 0];
+            cell_10.Text = Board.output[1, 0];
+            cell_20.Text = Board.output[2, 0];
+            cell_30.Text = Board.output[3, 0];
+            cell_40.Text = Board.output[4, 0];
+            cell_50.Text = Board.output[5, 0];
+            cell_60.Text = Board.output[6, 0];
+            cell_70.Text = Board.output[7, 0];
+
+            cell_01.Text = Board.output[0, 1];
+            cell_11.Text = Board.output[1, 1];
+            cell_21.Text = Board.output[2, 1];
+            cell_31.Text = Board.output[3, 1];
+            cell_41.Text = Board.output[4, 1];
+            cell_51.Text = Board.output[5, 1];
+            cell_61.Text = Board.output[6, 1];
+            cell_71.Text = Board.output[7, 1];
+
+            cell_02.Text = Board.output[0, 2];
+            cell_12.Text = Board.output[1, 2];
+            cell_22.Text = Board.output[2, 2];
+            cell_32.Text = Board.output[3, 2];
+            cell_42.Text = Board.output[4, 2];
+            cell_52.Text = Board.output[5, 2];
+            cell_62.Text = Board.output[6, 2];
+            cell_72.Text = Board.output[7, 2];
+
+            cell_03.Text = Board.output[0, 3];
+            cell_13.Text = Board.output[1, 3];
+            cell_23.Text = Board.output[2, 3];
+            cell_33.Text = Board.output[3, 3];
+            cell_43.Text = Board.output[4, 3];
+            cell_53.Text = Board.output[5, 3];
+            cell_63.Text = Board.output[6, 3];
+            cell_73.Text = Board.output[7, 3];
+
+            cell_04.Text = Board.output[0, 4];
+            cell_14.Text = Board.output[1, 4];
+            cell_24.Text = Board.output[2, 4];
+            cell_34.Text = Board.output[3, 4];
+            cell_44.Text = Board.output[4, 4];
+            cell_54.Text = Board.output[5, 4];
+            cell_64.Text = Board.output[6, 4];
+            cell_74.Text = Board.output[7, 4];
+
+            cell_05.Text = Board.output[0, 5];
+            cell_15.Text = Board.output[1, 5];
+            cell_25.Text = Board.output[2, 5];
+            cell_35.Text = Board.output[3, 5];
+            cell_45.Text = Board.output[4, 5];
+            cell_55.Text = Board.output[5, 5];
+            cell_65.Text = Board.output[6, 5];
+            cell_75.Text = Board.output[7, 5];
+
+            cell_06.Text = Board.output[0, 6];
+            cell_16.Text = Board.output[1, 6];
+            cell_26.Text = Board.output[2, 6];
+            cell_36.Text = Board.output[3, 6];
+            cell_46.Text = Board.output[4, 6];
+            cell_56.Text = Board.output[5, 6];
+            cell_66.Text = Board.output[6, 6];
+            cell_76.Text = Board.output[7, 6];
+
+            cell_07.Text = Board.output[0, 7];
+            cell_17.Text = Board.output[1, 7];
+            cell_27.Text = Board.output[2, 7];
+            cell_37.Text = Board.output[3, 7];
+            cell_47.Text = Board.output[4, 7];
+            cell_57.Text = Board.output[5, 7];
+            cell_67.Text = Board.output[6, 7];
+            cell_77.Text = Board.output[7, 7];
+        }
+
 
         private void KeyDown_Event(object sender, KeyEventArgs e)   // aktualizacja danych
         {
@@ -71,21 +147,18 @@ namespace GUI_2048
         public Plansza8x8()     // Inicjalizacja GUI
         {
               InitializeComponent();
-            /*
 
 
+            sizeBoard = 7;
 
-                        sizeBoard = 3;
+            User.CreateBoard(sizeBoard);     // wypełnienie tablicy zerami
 
-                        User.CreateBoard(sizeBoard);     // wypełnienie tablicy zerami
+            Board.RandValue();    // losuje wartość 2 lub 4
 
-                        Board.RandValue();    // losuje wartość 2 lub 4
+            Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
 
-                        Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
-
-                        Board.ConvertBytes();   // zamiana liczba na bajty
-                        Board.UpdateBoard();    // wyswietlenie zawartosci tablicy
-            */
+            Board.ConvertBytes(sizeBoard);   // zamiana liczba na bajty
+            UpdateBoard();    // wyswietlenie zawartosci tablicy
         }
 
 

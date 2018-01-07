@@ -48,37 +48,37 @@ namespace GUI_2048
         
         public void UpdateBoard()
         {
-            TextBlock cell_00 = new TextBlock();
-            TextBlock cell_10 = new TextBlock();
-            TextBlock cell_20 = new TextBlock();
-            TextBlock cell_30 = new TextBlock();
+          //  TextBlock cell_00 = new TextBlock();
+          //  TextBlock cell_10 = new TextBlock();
+          //  TextBlock cell_20 = new TextBlock();
+          //  TextBlock cell_30 = new TextBlock();
             cell_00.Text = Board.output[0, 0];
             cell_10.Text = Board.output[1, 0];
             cell_20.Text = Board.output[2, 0];
             cell_30.Text = Board.output[3, 0];
 
-            TextBlock cell_01 = new TextBlock();
-            TextBlock cell_11 = new TextBlock();
-            TextBlock cell_21 = new TextBlock();
-            TextBlock cell_31 = new TextBlock();
+          //  TextBlock cell_01 = new TextBlock();
+          //  TextBlock cell_11 = new TextBlock();
+          //  TextBlock cell_21 = new TextBlock();
+          //  TextBlock cell_31 = new TextBlock();
             cell_01.Text = Board.output[0, 1];
             cell_11.Text = Board.output[1, 1];
             cell_21.Text = Board.output[2, 1];
             cell_31.Text = Board.output[3, 1];
 
-            TextBlock cell_02 = new TextBlock();
-            TextBlock cell_12 = new TextBlock();
-            TextBlock cell_22 = new TextBlock();
-            TextBlock cell_32 = new TextBlock();
+          //  TextBlock cell_02 = new TextBlock();
+          //  TextBlock cell_12 = new TextBlock();
+          //  TextBlock cell_22 = new TextBlock();
+          //  TextBlock cell_32 = new TextBlock();
             cell_02.Text = Board.output[0, 2];
             cell_12.Text = Board.output[1, 2];
             cell_22.Text = Board.output[2, 2];
             cell_32.Text = Board.output[3, 2];
 
-            TextBlock cell_03 = new TextBlock();
-            TextBlock cell_13 = new TextBlock();
-            TextBlock cell_23 = new TextBlock();
-            TextBlock cell_33 = new TextBlock();
+          //  TextBlock cell_03 = new TextBlock();
+          //  TextBlock cell_13 = new TextBlock();
+          //  TextBlock cell_23 = new TextBlock();
+          //  TextBlock cell_33 = new TextBlock();
             cell_03.Text = Board.output[0, 3];
             cell_13.Text = Board.output[1, 3];
             cell_23.Text = Board.output[2, 3];
@@ -108,7 +108,7 @@ namespace GUI_2048
 
         public Plansza4x4()     // Inicjalizacja GUI
         {
-              InitializeComponent();
+            InitializeComponent();
 
             sizeBoard = 3;
  

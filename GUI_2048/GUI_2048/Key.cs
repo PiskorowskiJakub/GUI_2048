@@ -59,12 +59,12 @@ namespace GUI_2048
 
             if (_key1.Key == System.Windows.Input.Key.W || _key1.Key == System.Windows.Input.Key.Up)
             {
-                for (check_y = 0; check_y <= _sizeBoard; check_y += 1)
+                for (check_y = 0; check_y <= _sizeBoard; check_y++)
                 {
-                    for (check_x = 0; check_x <= _sizeBoard; check_x += 1)
+                    for (check_x = 0; check_x <= _sizeBoard; check_x++)
                     {
                         // sprawdzamy wiersze od ostatniego do pierwszego
-                        for (int max = _sizeBoard; max <= check_y; max--)
+                        for (int max = _sizeBoard; max >= check_y; max--)
                         {
                             // jezeli 1 i ostatni wiersz jest taki sam 
                             if (User.board[check_y, check_x] == User.board[max, check_x])

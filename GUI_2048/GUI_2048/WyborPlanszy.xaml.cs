@@ -30,14 +30,14 @@ namespace GUI_2048
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Plansza6x6(object sender, RoutedEventArgs e)
         {
             Plansza6x6 Plansza6x6 = new Plansza6x6();
             Plansza6x6.Show();
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Plansza8x8(object sender, RoutedEventArgs e)
         {
             Plansza8x8 Plansza8x8 = new Plansza8x8();
             Plansza8x8.Show();

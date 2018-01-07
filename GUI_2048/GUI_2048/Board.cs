@@ -18,7 +18,7 @@ namespace GUI_2048
 
         User User = new User();
 
-        public string ConvertBytes(int _sizeboard)
+        public void ConvertBytes(int _sizeboard)
         {
             // Dictionary zamiast switch
             for (int i = 0; i <= _sizeboard; i += 1)
@@ -27,7 +27,7 @@ namespace GUI_2048
                 {
                     switch(User.board[i,j])
                     {
-                        case 0: output[i,j] = "0"; break;
+                        case 0: output[i,j] = " "; break;
                         case 2: output[i, j] = "2 kb"; break;
                         case 4: output[i, j] = "4 kb"; break;
                         case 8: output[i, j] = "8 kb"; break;
@@ -48,7 +48,6 @@ namespace GUI_2048
                     }
                 }
             }
-            return output[3, 3] = " ";
         }
 
         
