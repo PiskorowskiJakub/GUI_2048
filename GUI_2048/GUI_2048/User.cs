@@ -8,7 +8,7 @@ namespace GUI_2048
 {
     class User 
     {
-        public int emptyy = 1; // pole puste
+        public int emptyy = 0; // pole puste
         //public string name;
      //   public int points;
     //    public int loadBoard;

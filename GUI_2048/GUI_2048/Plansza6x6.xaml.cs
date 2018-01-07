@@ -70,7 +70,7 @@ namespace GUI_2048
 
         public Plansza6x6()     // Inicjalizacja GUI
         {
-          //  InitializeComponent();
+            InitializeComponent();
 
 /*
             

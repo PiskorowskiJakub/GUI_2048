@@ -83,9 +83,17 @@ namespace GUI_2048
                                 {
                                     // dodanie komorki wiersza 1 i ostatniego
                                     User.board[check_y, check_x] += User.board[max, check_x];
-                                    // ostatnia komorke wiersza wypelniamy zerami
+                                    // ostatnia komorke wiersza wypelniamy zerem
                                     User.board[max, check_x] = User.emptyy;
                                 }
+                            }
+                            // jezeli pierwszy wiersz i nastepny sa takie same 
+                            else if(User.board[check_y, check_x] == User.board[++check_y, check_x])
+                            {
+                                // dodaj pierszy i kolejny wiersz
+                                User.board[check_y, check_x] += User.board[++check_y, check_x];
+                                // kolejny wiersz wypelnij zerem
+                                User.board[++check_y, check_x] = User.emptyy;
                             }
                         }
                     }
