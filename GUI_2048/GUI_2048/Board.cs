@@ -31,7 +31,7 @@ namespace GUI_2048
                         case 2: output[i, j] = "2 kb"; break;
                         case 4: output[i, j] = "4 kb"; break;
                         case 8: output[i, j] = "8 kb"; break;
-                        case 16:  output[i, j] = "16 kb"; break;
+                        case 16: output[i, j] = "16 kb"; break;
                         case 32: output[i, j] = "32 kb"; break;
                         case 64: output[i, j] = "64 kb"; break;
                         case 128: output[i, j] = "128 kb"; break;

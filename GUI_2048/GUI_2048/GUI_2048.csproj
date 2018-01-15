@@ -67,6 +67,11 @@
     <Compile Include="Plansza8x8.xaml.cs">
       <DependentUpon>Plansza8x8.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ResourceMain.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMain.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sterowanie.xaml.cs">
       <DependentUpon>Sterowanie.xaml</DependentUpon>
     </Compile>
@@ -128,6 +133,11 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceMainPL.pl.resx" />
+    <EmbeddedResource Include="ResourceMain.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMain.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">

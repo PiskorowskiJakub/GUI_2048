@@ -25,6 +25,7 @@ namespace GUI_2048
         public MainWindow()
         {
             InitializeComponent();
+          //  ResourceMain res = new ResourceMain(typeof(ResourceMainPL)) 
         }
 
         private void start(object sender, RoutedEventArgs e)
