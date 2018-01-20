@@ -43,8 +43,11 @@ namespace GUI_2048
                         case 8192: output[i, j] = "8 MB"; break;
                         case 16384: output[i, j] = "16 MB"; break;
                         case 32768: output[i, j] = "32 MB"; break;
-                        case 65536: output[i, j] = "65 MB"; break;
-                        default: output[i, j] = " "; break;
+                        case 65536: output[i, j] = "64 MB"; break;
+                        case 131072: output[i, j] = "128 MB"; break;
+                        case 262144: output[i, j] = "256 MB"; break;
+                        case 524288: output[i, j] = "512 MB"; break;
+                        default: output[i, j] = "-"; break;
                     }
                 }
             }

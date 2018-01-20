@@ -91,47 +91,47 @@
                 <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="5"/>
 
 
-                <TextBlock Name="cell_00" Grid.Row="0" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_10" Grid.Row="1" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_20" Grid.Row="2" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_30" Grid.Row="3" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_40" Grid.Row="4" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_50" Grid.Row="5" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
+                <TextBlock Name="cell_00" Grid.Row="0" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_10" Grid.Row="1" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_20" Grid.Row="2" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_30" Grid.Row="3" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_40" Grid.Row="4" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_50" Grid.Row="5" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
 
-                <TextBlock Name="cell_01" Grid.Row="0" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_11" Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_21" Grid.Row="2" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_31" Grid.Row="3" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_41" Grid.Row="4" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_51" Grid.Row="5" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
+                <TextBlock Name="cell_01" Grid.Row="0" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_11" Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_21" Grid.Row="2" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_31" Grid.Row="3" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_41" Grid.Row="4" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_51" Grid.Row="5" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
 
-                <TextBlock Name="cell_02" Grid.Row="0" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_12" Grid.Row="1" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_22" Grid.Row="2" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_32" Grid.Row="3" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_42" Grid.Row="4" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_52" Grid.Row="5" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
+                <TextBlock Name="cell_02" Grid.Row="0" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_12" Grid.Row="1" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_22" Grid.Row="2" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_32" Grid.Row="3" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_42" Grid.Row="4" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_52" Grid.Row="5" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
 
-                <TextBlock Name="cell_03" Grid.Row="0" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_13" Grid.Row="1" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_23" Grid.Row="2" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_33" Grid.Row="3" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_43" Grid.Row="4" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_53" Grid.Row="5" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
+                <TextBlock Name="cell_03" Grid.Row="0" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_13" Grid.Row="1" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_23" Grid.Row="2" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_33" Grid.Row="3" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_43" Grid.Row="4" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_53" Grid.Row="5" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
 
-                <TextBlock Name="cell_04" Grid.Row="0" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_14" Grid.Row="1" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_24" Grid.Row="2" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_34" Grid.Row="3" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_44" Grid.Row="4" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_54" Grid.Row="5" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
+                <TextBlock Name="cell_04" Grid.Row="0" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_14" Grid.Row="1" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_24" Grid.Row="2" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_34" Grid.Row="3" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_44" Grid.Row="4" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_54" Grid.Row="5" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
 
-                <TextBlock Name="cell_05" Grid.Row="0" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_15" Grid.Row="1" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_25" Grid.Row="2" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_35" Grid.Row="3" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_45" Grid.Row="4" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
-                <TextBlock Name="cell_55" Grid.Row="5" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="25"></TextBlock>
+                <TextBlock Name="cell_05" Grid.Row="0" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_15" Grid.Row="1" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_25" Grid.Row="2" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_35" Grid.Row="3" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_45" Grid.Row="4" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
+                <TextBlock Name="cell_55" Grid.Row="5" Grid.Column="5" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
 
 
             </Grid>

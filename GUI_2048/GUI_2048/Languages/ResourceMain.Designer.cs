@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GUI_2048 {
+namespace GUI_2048.Languages {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace GUI_2048 {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GUI_2048.ResourceMain", typeof(ResourceMain).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GUI_2048.Languages.ResourceMain", typeof(ResourceMain).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

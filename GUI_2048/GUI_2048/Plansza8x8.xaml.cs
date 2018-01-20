@@ -126,21 +126,27 @@ namespace GUI_2048
         private void KeyDown_Event(object sender, KeyEventArgs e)   // aktualizacja danych
         {
 
-            /*
-                        Board.RandValue();    // losuje wartość 2 lub 4
+            Key.Checkclear(sizeBoard);   // sprawdzenie czy sa puste pola 
 
-                        Key.CheckKey(sizeBoard, e);    // sprawdzanie klawisza i wykonanie ruchu 
+            if (Key.board_clear == false)
+            {
+                MessageBox.Show("Koniec Gry");
+                MainWindow wyjscie = new MainWindow();
+                wyjscie.Show();
+                this.Close();
+            }
 
-                        Key.Checkclear();   // sprawdzenie czy sa puste pola 
+            Key.CheckKey(sizeBoard, e);    // sprawdzanie klawisza i wykonanie ruchu 
 
-                        if (Key.check_move > 0)         // Jesli wykonano jakis ruch
-                        {
-                            Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby      
-                        }
+            if (Key.check_move == true)         // Jesli wykonano jakis ruch
+            {
+                Board.RandValue();    // losuje wartość 2 lub 4
+                Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby      
+            }
 
-                        Board.ConvertBytes();   // zamiana liczb na bajty
-                        UpdateBoard();      // Wprowadź nowe wartości do tablicy
-                        */
+            Board.ConvertBytes(sizeBoard);   // zamiana liczb na bajty
+
+            UpdateBoard();      // Wprowadź nowe wartości do tablicy
         }
 
 
@@ -152,10 +158,11 @@ namespace GUI_2048
             sizeBoard = 7;
 
             User.CreateBoard(sizeBoard);     // wypełnienie tablicy zerami
-
-            Board.RandValue();    // losuje wartość 2 lub 4
-
-            Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
+            for (int i = 0; i < 2; i++)
+            {
+                Board.RandValue();    // losuje wartość 2 lub 4
+                Board.RandCoordinates(sizeBoard);     // losowanie wspolrzednych nowej liczby
+            }
 
             Board.ConvertBytes(sizeBoard);   // zamiana liczba na bajty
             UpdateBoard();    // wyswietlenie zawartosci tablicy

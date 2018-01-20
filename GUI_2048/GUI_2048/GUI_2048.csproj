@@ -67,7 +67,7 @@
     <Compile Include="Plansza8x8.xaml.cs">
       <DependentUpon>Plansza8x8.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ResourceMain.Designer.cs">
+    <Compile Include="Languages\ResourceMain.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceMain.resx</DependentUpon>
@@ -134,8 +134,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResourceMainPL.pl.resx" />
-    <EmbeddedResource Include="ResourceMain.resx">
+    <EmbeddedResource Include="Languages\ResourceMainPL.pl.resx" />
+    <EmbeddedResource Include="Languages\ResourceMain.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceMain.Designer.cs</LastGenOutput>
     </EmbeddedResource>
