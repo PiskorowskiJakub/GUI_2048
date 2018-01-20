@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="GUI_2048.App" Collapsed="true">
-    <Position X="9.5" Y="1.75" Width="1.5" />
+    <Position X="13.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GUI_2048.Board">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+    <Position X="3" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABQAAAEAEAAAAAAAAAAAAACIAAAAAAAACAABAAgBA=</HashCode>
       <FileName>Board.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GUI_2048.Informacje" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="8.75" Width="1.5" />
+    <Position X="9.75" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Informacje.xaml.cs</FileName>
@@ -23,22 +23,14 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Key">
-    <Position X="0.5" Y="1.25" Width="1.5" />
+    <Position X="3" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAQAAAAMgAAAAAAAAAAgDAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAQAAAAMgGAAAAAIAAAgDAAAAAAAAAAAAAA=</HashCode>
       <FileName>Key.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GUI_2048.MainWindow" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="1.5" Width="1.5" />
-    <InheritanceLine Type="System.Windows.Window" ManuallyRouted="true">
-      <Path>
-        <Point X="5.5" Y="1.191" />
-        <Point X="5.5" Y="1.604" />
-        <Point X="7.5" Y="1.604" />
-        <Point X="7.5" Y="1.5" />
-      </Path>
-    </InheritanceLine>
+    <Position X="9.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAACAAAgAACAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
@@ -46,15 +38,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Plansza4x4" BaseTypeListCollapsed="true">
-    <Position X="3" Y="2.25" Width="1.5" />
-    <InheritanceLine Type="System.Windows.Window" ManuallyRouted="true">
-      <Path>
-        <Point X="5.5" Y="1.191" />
-        <Point X="5.5" Y="2.094" />
-        <Point X="3.75" Y="2.094" />
-        <Point X="3.75" Y="2.25" />
-      </Path>
-    </InheritanceLine>
+    <Position X="5.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACADAAIAAAAAAARAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Plansza4x4.xaml.cs</FileName>
@@ -62,15 +46,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Plansza6x6" BaseTypeListCollapsed="true">
-    <Position X="3" Y="5.5" Width="1.5" />
-    <InheritanceLine Type="System.Windows.Window" ManuallyRouted="true" FixedToPoint="true">
-      <Path>
-        <Point X="5.5" Y="1.191" />
-        <Point X="5.5" Y="5.26" />
-        <Point X="3.688" Y="5.26" />
-        <Point X="3.688" Y="5.5" />
-      </Path>
-    </InheritanceLine>
+    <Position X="5.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACADAAAAAAACAARAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Plansza6x6.xaml.cs</FileName>
@@ -78,7 +54,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Plansza8x8" BaseTypeListCollapsed="true">
-    <Position X="3" Y="8.75" Width="1.5" />
+    <Position X="5.75" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACADAAAAAAACAARAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Plansza8x8.xaml.cs</FileName>
@@ -86,7 +62,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Sterowanie" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="6.75" Width="1.5" />
+    <Position X="9.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Sterowanie.xaml.cs</FileName>
@@ -94,34 +70,40 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.User">
-    <Position X="0.5" Y="8" Width="1.5" />
+    <Position X="3" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIgAAAAAAAAA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GUI_2048.WyborPlanszy" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="4.25" Width="1.5" />
+    <Position X="9.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAABAAAAAAAAEAAAAAABAAAAAAAAA=</HashCode>
       <FileName>WyborPlanszy.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="GUI_2048.Languages.ResourceMain" Collapsed="true">
+    <Position X="13.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAREAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
   <Class Name="GUI_2048.Properties.Resources" Collapsed="true">
-    <Position X="9.5" Y="2.75" Width="1.5" />
+    <Position X="13.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="GUI_2048.Properties.Settings" Collapsed="true">
-    <Position X="9.5" Y="0.75" Width="1.5" />
+    <Position X="13.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="System.Windows.Window" Collapsed="true">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+    <Position X="7.5" Y="0.75" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />

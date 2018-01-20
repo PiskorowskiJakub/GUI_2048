@@ -33,10 +33,36 @@ namespace GUI_2048
 
 
 
+        public System.Windows.Media.SolidColorBrush ChangeBackground(int a, int b)
+        {
+            //var checkBg = Brushes.White; 
+            switch (User.board[a, b])
+            {
+                case 0: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
+                case 2: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffe8cc"));
+                case 4: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffe8cc"));
+                case 8: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffe8cc"));
+                case 16: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffddb3"));
+                case 32: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffddb3"));
+                case 64: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffddb3"));
+                case 128: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffd199"));
+                case 256: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffd199"));
+                case 512: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffd199"));
+                case 1024: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffba66"));
+                case 2048: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffaf4d"));
+                case 4096: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#e67300"));
+                case 8192: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#f2460d"));
+                case 16384: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#d44211"));
+                case 32768: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#e23636"));
+                case 65536: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#f65555"));
+                case 131072: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#f42525"));
+                case 262144: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#cc0000"));
+                case 524288: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ff0000"));
 
+                default: return (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
+            }
 
-        
-
+        }
 
 
         public int sizeBoard;
@@ -47,7 +73,49 @@ namespace GUI_2048
 
         public void UpdateBoard()
         {
-           
+            area_00.Background = ChangeBackground(0, 0);
+            area_10.Background = ChangeBackground(1, 0);
+            area_20.Background = ChangeBackground(2, 0);
+            area_30.Background = ChangeBackground(3, 0);
+            area_40.Background = ChangeBackground(4, 0);
+            area_50.Background = ChangeBackground(5, 0);
+
+            area_01.Background = ChangeBackground(0, 1);
+            area_11.Background = ChangeBackground(1, 1);
+            area_21.Background = ChangeBackground(2, 1);
+            area_31.Background = ChangeBackground(3, 1);
+            area_41.Background = ChangeBackground(4, 1);
+            area_51.Background = ChangeBackground(5, 1);
+
+            area_02.Background = ChangeBackground(0, 2);
+            area_12.Background = ChangeBackground(1, 2);
+            area_22.Background = ChangeBackground(2, 2);
+            area_32.Background = ChangeBackground(3, 2);
+            area_42.Background = ChangeBackground(4, 2);
+            area_52.Background = ChangeBackground(5, 2);
+
+            area_03.Background = ChangeBackground(0, 3);
+            area_13.Background = ChangeBackground(1, 3);
+            area_23.Background = ChangeBackground(2, 3);
+            area_33.Background = ChangeBackground(3, 3);
+            area_43.Background = ChangeBackground(4, 3);
+            area_53.Background = ChangeBackground(5, 3);
+
+            area_04.Background = ChangeBackground(0, 4);
+            area_14.Background = ChangeBackground(1, 4);
+            area_24.Background = ChangeBackground(2, 4);
+            area_34.Background = ChangeBackground(3, 4);
+            area_44.Background = ChangeBackground(4, 4);
+            area_54.Background = ChangeBackground(5, 4);
+
+            area_05.Background = ChangeBackground(0, 5);
+            area_15.Background = ChangeBackground(1, 5);
+            area_25.Background = ChangeBackground(2, 5);
+            area_35.Background = ChangeBackground(3, 5);
+            area_45.Background = ChangeBackground(4, 5);
+            area_55.Background = ChangeBackground(5, 5);
+
+
             cell_00.Text = Board.output[0, 0];
             cell_10.Text = Board.output[1, 0];
             cell_20.Text = Board.output[2, 0];
@@ -126,8 +194,6 @@ namespace GUI_2048
         {
             InitializeComponent();
 
-
-            
 
             sizeBoard = 5;
 

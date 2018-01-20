@@ -53,42 +53,42 @@
                     <ColumnDefinition Width="75"/>
                 </Grid.ColumnDefinitions>
 
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="4"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="5"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="4"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="5"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="4"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="5"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="4"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="5"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="4"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="5"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="4"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="5"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="0" Name="area_00"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="1" Name="area_01"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="2" Name="area_02"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="3" Name="area_03"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="4" Name="area_04"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="5" Name="area_05"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="0" Name="area_10"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="1" Name="area_11"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="2" Name="area_12"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="3" Name="area_13"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="4" Name="area_14"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="5" Name="area_15"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="0" Name="area_20"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="1" Name="area_21"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="2" Name="area_22"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="3" Name="area_23"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="4" Name="area_24"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="5" Name="area_25"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="0" Name="area_30"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="1" Name="area_31"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="2" Name="area_32"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="3" Name="area_33"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="4" Name="area_34"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="5" Name="area_35"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="0" Name="area_40"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="1" Name="area_41"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="2" Name="area_42"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="3" Name="area_43"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="4" Name="area_44"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="4" Grid.Column="5" Name="area_45"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="0" Name="area_50"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="1" Name="area_51"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="2" Name="area_52"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="3" Name="area_53"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="4" Name="area_54"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="5" Grid.Column="5" Name="area_55"/>
 
 
                 <TextBlock Name="cell_00" Grid.Row="0" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>

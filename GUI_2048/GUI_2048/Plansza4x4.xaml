@@ -49,22 +49,22 @@
                     <ColumnDefinition Width="75"/>
                 </Grid.ColumnDefinitions>
 
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="3"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="0"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="1"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="2"/>
-                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="3"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="0" Name="area_00"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="1" Name="area_01"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="2" Name="area_02"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="0" Grid.Column="3" Name="area_03"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="0" Name="area_10"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="1" Name="area_11"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="2" Name="area_12"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="1" Grid.Column="3" Name="area_13"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="0" Name="area_20"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="1" Name="area_21"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="2" Name="area_22"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="2" Grid.Column="3" Name="area_23"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="0" Name="area_30"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="1" Name="area_31"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="2" Name="area_32"/>
+                <Border BorderBrush="#000000" BorderThickness="2" Grid.Row="3" Grid.Column="3" Name="area_33"/>
 
 
                 <TextBlock Name="cell_00" Grid.Row="0" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" Width="75" FontSize="20"></TextBlock>
