@@ -58,6 +58,16 @@
       <DependentUpon>Informacje.xaml</DependentUpon>
     </Compile>
     <Compile Include="Key.cs" />
+    <Compile Include="Languages\ResourceMain.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMain.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\ResourceMain.pl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMain.pl.resx</DependentUpon>
+    </Compile>
     <Compile Include="Plansza4x4.xaml.cs">
       <DependentUpon>Plansza4x4.xaml</DependentUpon>
     </Compile>
@@ -134,10 +144,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Languages\ResourceMainPL.pl.resx" />
+    <EmbeddedResource Include="Languages\ResourceMain.pl.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMain.pl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Languages\ResourceMain.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceMain.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\ResourceMain.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMain.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">

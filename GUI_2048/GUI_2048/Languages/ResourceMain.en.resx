@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Informacje" xml:space="preserve">
-    <value>Informacje</value>
+    <value>Information</value>
   </data>
   <data name="Jezyk" xml:space="preserve">
-    <value>Jezyk</value>
+    <value>Language</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Start</value>
   </data>
   <data name="Sterowanie" xml:space="preserve">
-    <value>Sterowanie</value>
+    <value>Control</value>
   </data>
   <data name="Wyjscie" xml:space="preserve">
-    <value>Wyjscie</value>
+    <value>Exit</value>
   </data>
 </root>

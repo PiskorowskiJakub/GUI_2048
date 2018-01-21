@@ -55,7 +55,7 @@ namespace GUI_2048
 
 
 
-
+        public int checkAchiv = 0;
         public int sizeBoard;
         
         User User = new User();
@@ -111,7 +111,7 @@ namespace GUI_2048
             cell_23.Text = Board.output[2, 3];
             cell_33.Text = Board.output[3, 3];
         }
-/*
+
         public void CheckAchiv(int _sizeboard)
         {
             for (int i = 0; i <= _sizeboard; i += 1)
@@ -120,25 +120,23 @@ namespace GUI_2048
                 {
                     switch (User.board[i, j])
                     {
-                        
-                        case 128: MessageBox.Show("Dobra robota !!!"); break;
-                        
-                        case 512: MessageBox.Show("Dobra robota !!!"); break;
-                        case 1024: MessageBox.Show("Dobra robota !!!"); break;
-                        case 2048: MessageBox.Show("Dobra robota !!!"); break;
-                        case 4096: MessageBox.Show("Dobra robota !!!"); break;
-                        case 8192: MessageBox.Show("Dobra robota !!!"); break;
-                        case 16384: MessageBox.Show("Dobra robota !!!"); break;
-                        case 32768: MessageBox.Show("Dobra robota !!!"); break;
-                        case 65536: MessageBox.Show("Dobra robota !!!"); break;
-                        case 131072: MessageBox.Show("Dobra robota !!!"); break;
-                        case 262144: MessageBox.Show("Dobra robota !!!"); break;
-                        case 524288: MessageBox.Show("Dobra robota !!!"); break;
+                        case 128: if (checkAchiv == 0) { MessageBox.Show("Pierwsze kroki"); checkAchiv = 1; } break;
+                        case 512: if (checkAchiv == 1) { MessageBox.Show("Moja babcia doszła by dalej :P"); checkAchiv = 2; } break;
+                        case 1024: if (checkAchiv == 2) { MessageBox.Show("Chyba nie klikasz losowo?"); checkAchiv = 3; } break;
+                        case 2048: if (checkAchiv == 3) { MessageBox.Show("Czy to już koniec?"); checkAchiv = 4; } break;
+                        case 4096: if (checkAchiv == 4) { MessageBox.Show("Czy to jeszcze działa?"); checkAchiv = 5; } break;
+                        case 8192: if (checkAchiv == 5) { MessageBox.Show("Empty"); checkAchiv = 6; } break;
+                        case 16384: if (checkAchiv == 6) { MessageBox.Show("„Ja tu byłem :D” – Jacob.exe"); checkAchiv = 7; } break;
+                        case 32768: if (checkAchiv == 7) { MessageBox.Show("Jestem farmerem!"); checkAchiv = 8; } break;
+                        case 65536: if (checkAchiv == 8) { MessageBox.Show("Empty"); checkAchiv = 9; } break;
+                        case 131072: if (checkAchiv == 9) { MessageBox.Show("Choćbym chodził ciemną doliną…"); checkAchiv = 10; } break;
+                        case 262144: if (checkAchiv == 10) { MessageBox.Show("Wybraniec"); checkAchiv = 11; } break;
+                        case 524288: if (checkAchiv == 11) { MessageBox.Show("GOD AMONGST MAN!"); checkAchiv = 12; } break;
                     }
                 }
             }
         }
-*/
+
         private void KeyDown_Event(object sender, KeyEventArgs e)   // aktualizacja danych
         {
 
@@ -163,8 +161,8 @@ namespace GUI_2048
 
             Board.ConvertBytes(sizeBoard);   // zamiana liczb na bajty
 
- //           CheckAchiv(sizeBoard);      // wyswietlenie Achivmenta
             UpdateBoard();      // Wprowadź nowe wartości do tablicy
+            CheckAchiv(sizeBoard);      // wyswietlenie Achivmenta
 
         }
 

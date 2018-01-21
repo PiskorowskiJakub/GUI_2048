@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Tytul" xml:space="preserve">
-    <value>Gra</value>
+  <data name="Informacje" xml:space="preserve">
+    <value>Informacie</value>
+  </data>
+  <data name="Jezyk" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Rozpocznij grę</value>
+  </data>
+  <data name="Sterowanie" xml:space="preserve">
+    <value>Sterowanie</value>
+  </data>
+  <data name="Wyjscie" xml:space="preserve">
+    <value>Wyjście</value>
   </data>
 </root>

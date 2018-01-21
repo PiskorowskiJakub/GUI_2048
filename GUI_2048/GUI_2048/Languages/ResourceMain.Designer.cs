@@ -22,7 +22,7 @@ namespace GUI_2048.Languages {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResourceMain {
+    public class ResourceMain {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace GUI_2048.Languages {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GUI_2048.Languages.ResourceMain", typeof(ResourceMain).Assembly);
@@ -51,7 +51,7 @@ namespace GUI_2048.Languages {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,11 +61,47 @@ namespace GUI_2048.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gra.
+        ///   Looks up a localized string similar to Informacje.
         /// </summary>
-        internal static string tytul {
+        public static string Informacje {
             get {
-                return ResourceManager.GetString("tytul", resourceCulture);
+                return ResourceManager.GetString("Informacje", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jezyk.
+        /// </summary>
+        public static string Jezyk {
+            get {
+                return ResourceManager.GetString("Jezyk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start.
+        /// </summary>
+        public static string Start {
+            get {
+                return ResourceManager.GetString("Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sterowanie.
+        /// </summary>
+        public static string Sterowanie {
+            get {
+                return ResourceManager.GetString("Sterowanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wyjscie.
+        /// </summary>
+        public static string Wyjscie {
+            get {
+                return ResourceManager.GetString("Wyjscie", resourceCulture);
             }
         }
     }

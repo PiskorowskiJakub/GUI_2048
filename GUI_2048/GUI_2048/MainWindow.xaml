@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
+        xmlns:resx="clr-namespace:GUI_2048"
         Title="MainWindow" Height="450" Width="450">
     <Grid Background="Silver">
         <Grid.RowDefinitions>
@@ -28,9 +29,16 @@
         <Button Click="sterowanie" Content="Sterowanie" Grid.Column="1" Margin="40,5,0,5" Grid.Row="3" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
         <Button Click="informacje" Content="Informacje" Grid.Column="1" Margin="40,5,0,5" Grid.Row="5" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
         <Button Click="wyjscie" Content="Wyjście" Grid.Column="1" Margin="40,5,0,5" Grid.Row="7" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
+
+
+        <Button Content="PL" Grid.Column="2" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top" Width="28"/>
+        <Button Content="EN" Grid.Column="2" HorizontalAlignment="Left" Margin="78,10,0,0" VerticalAlignment="Top" Width="29"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="Jezyk:" VerticalAlignment="Top" Width="35" RenderTransformOrigin="1.373,0.724"/>
         
+
+
     </Grid>
 
-    
-    
+
+
 </Window>
