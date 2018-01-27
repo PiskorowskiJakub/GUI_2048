@@ -165,5 +165,83 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MainWindow_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MainWindow_button_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MainWindow_button_sterowanie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MainWindow_button_informacje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MainWindow_button_wyjscie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\plansza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Informacje_background_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Informacje_button_powrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sterowanie_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sterowanie_button_powrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sterowanie_label_background_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sterowanie_label_background_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_button_powrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_4x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_button_4x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_6x6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_button_6x6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_button_8x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\WyborPlanszy_8x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plansza4x4_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plansza4x4_button_wyjscie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plansza6x6_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plansza6x6_button_wyjscie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plansza8x8_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Plansza8x8_button_wyjscie.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

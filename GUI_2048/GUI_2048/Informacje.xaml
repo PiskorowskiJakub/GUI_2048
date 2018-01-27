@@ -6,39 +6,41 @@
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
         Title="Informacje" Height="450" Width="450">
-    <Grid Background="Silver">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/informacje_background_v2.png" TileMode="FlipXY"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="90"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="246"/>
+            <RowDefinition Height="9"/>
+            <RowDefinition Height="55"/>
             <RowDefinition Height="10"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="350"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="49"/>
+            <ColumnDefinition Width="358"/>
+            <ColumnDefinition Width="43"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Column="1" Grid.Row="0" Foreground="DarkGreen" FontSize="35" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Informacje" TextAlignment="Center" VerticalAlignment="Top" Width="350"/>
-
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Background="White" Padding="10">
-            <Run Text="Jakie są zasady gry 2048? Na kwadracie mającym 16 pól mamy liczby, na początku w jednym polu liczbę '2'. Gracz musi przesuwać je w taki sposób, by dodać dwa pola o identycznej wartości."/>
-            <LineBreak/>
-        <Run Text="Celem gry jest uzyskanie wspomnianej liczby 2048 na jednym z pól. Po dodaniu dwóch płytek z tym samym numerem, kwadraciki łączą się w nowe pole z numerem, który jest sumą dodania dwóch kwadracików: 2 +2 = 4, 4 +4 = 8, ... 1024 +1024 = 2048.
-Trudność tej gry polega na tym, że z każdym ruchem przybywa nowy klocek z liczbą 2, czasami jest to liczba 4. W czasie gry ruszasz wszystkimi klockami naraz. "/>
-        </TextBlock>
-
+        <!--        <TextBlock Grid.Column="1" Grid.Row="0" Foreground="DarkGreen" FontSize="35" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Informacje" TextAlignment="Center" VerticalAlignment="Top" Width="350"/>
+-->
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="3,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Padding="10" FontWeight="Bold" Foreground="White" FontStyle="Italic" Height="236" Width="355" FontSize="13"><Run Text="Jakie są zasady gry 2048? Na kwadracie mającym 16 pól mamy liczby, na początku w jednym polu liczby '2 i '4''. Gracz musi przesuwać je w taki sposób, by dodać dwa pola o identycznej wartości."/><LineBreak/><Run Text="Celem gry jest uzyskanie wspomnianej liczby 2048 na jednym z pól. Po dodaniu dwóch płytek z tym samym numerem, kwadraciki łączą się w nowe pole z numerem, który jest sumą dodania dwóch kwadracików: 2 +2 = 4, 4 +4 = 8, ... 1024 +1024 = 2048. Trudność tej gry polega na tym, że z każdym ruchem przybywa nowy klocek z liczbą 2, czasami jest to liczba 4. W czasie gry ruszasz wszystkimi klockami naraz. "/></TextBlock>
+        <!--
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="70,30,0,0" Grid.Row="4" TextWrapping="Wrap"  VerticalAlignment="Top" Height="50" FontSize="15" Width="250">
             <Run Text="Created by Jakub Piskorowski "/><LineBreak/>
             <Run Text="Email: jacobmasterr@gmail.com"/>
         </TextBlock>
+-->
+        <Button Click="wyjscie"  Grid.Column="1" Height="39" FontSize="20" HorizontalAlignment="Left" Margin="100,0,0,0" Grid.Row="6" VerticalAlignment="Top" Width="141">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Informacje_button_powrot.png"/>
+            </Button.Background>
+        </Button>
 
-        <Button Click="wyjscie" Content="Powrót" Grid.Column="1" Height="30" FontSize="20" HorizontalAlignment="Left" Margin="125,5,0,0" Grid.Row="6" VerticalAlignment="Top" Width="95"/>
-        
 
 
 

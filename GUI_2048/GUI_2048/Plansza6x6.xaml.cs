@@ -172,13 +172,13 @@ namespace GUI_2048
                         case 1024: if (checkAchiv == 2) { MessageBox.Show("Chyba nie klikasz losowo?"); checkAchiv = 3; } break;
                         case 2048: if (checkAchiv == 3) { MessageBox.Show("Czy to już koniec?"); checkAchiv = 4; } break;
                         case 4096: if (checkAchiv == 4) { MessageBox.Show("Czy to jeszcze działa?"); checkAchiv = 5; } break;
-                        case 8192: if (checkAchiv == 5) { MessageBox.Show("Empty"); checkAchiv = 6; } break;
+                        case 8192: if (checkAchiv == 5) { MessageBox.Show("Pojawiam się i znikam. Taka rola magika"); checkAchiv = 6; } break;
                         case 16384: if (checkAchiv == 6) { MessageBox.Show("„Ja tu byłem :D” – Jacob.exe"); checkAchiv = 7; } break;
                         case 32768: if (checkAchiv == 7) { MessageBox.Show("Jestem farmerem!"); checkAchiv = 8; } break;
-                        case 65536: if (checkAchiv == 8) { MessageBox.Show("Empty"); checkAchiv = 9; } break;
-                        case 131072: if (checkAchiv == 9) { MessageBox.Show("Choćbym chodził ciemną doliną…"); checkAchiv = 10; } break;
-                        case 262144: if (checkAchiv == 10) { MessageBox.Show("Wybraniec"); checkAchiv = 11; } break;
-                        case 524288: if (checkAchiv == 11) { MessageBox.Show("GOD AMONGST MAN!"); checkAchiv = 12; } break;
+                        case 65536: if (checkAchiv == 8) { MessageBox.Show("Choćbym chodził ciemną doliną…"); checkAchiv = 9; } break;
+                        case 131072: if (checkAchiv == 9) { MessageBox.Show("Wybraniec"); checkAchiv = 10; } break;
+                        case 262144: if (checkAchiv == 10) { MessageBox.Show("GOD AMONGST MAN!"); checkAchiv = 11; } break;
+                        case 524288: if (checkAchiv == 11) { MessageBox.Show("#$@_ERROR_#*@"); checkAchiv = 12; } break;
                     }
                 }
             }

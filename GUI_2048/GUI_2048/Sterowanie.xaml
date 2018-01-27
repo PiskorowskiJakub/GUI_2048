@@ -6,13 +6,16 @@
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
         Title="Sterowanie" Height="450" Width="450">
-    <Grid Background="Silver">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Sterowanie_background.png" TileMode="FlipXY"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="146"/>
+            <RowDefinition Height="24"/>
             <RowDefinition Height="10"/>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="46"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="160"/>
         </Grid.RowDefinitions>
@@ -21,12 +24,23 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="125"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="35" HorizontalAlignment="Left" Margin="0,80,0,0" TextWrapping="Wrap" Text="Sterowanie" VerticalAlignment="Top" TextAlignment="Center" Width="200"/>
-        
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" FontSize="15" TextAlignment="Center" Width="200" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Klawiszami W, A, S, D" VerticalAlignment="Top"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" FontSize="15" TextAlignment="Center" Width="200" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Strzałkami" VerticalAlignment="Top"/>
-        <Button Click="wyjscie" Content="Powrót" HorizontalAlignment="Left" Margin="50,5,0,0" Grid.Row="5" VerticalAlignment="Top" Width="100" Height="30" FontSize="20" Grid.Column="1"/>
-        
+
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" FontSize="15" TextAlignment="Center" Width="200" Grid.Row="1" TextWrapping="Wrap" Text="Klawiszami W, A, S, D" VerticalAlignment="Top" Height="24" Foreground="White" FontWeight="Bold">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="Images/Sterowanie_label_background_01.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" FontSize="15" TextAlignment="Center" Width="200" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Strzałkami" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="24">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="Images/Sterowanie_label_background_02.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button Click="wyjscie" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Width="200" Height="40" FontSize="20" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Sterowanie_button_powrot.png"/>
+            </Button.Background>
+        </Button>
+
 
     </Grid>
 </Window>

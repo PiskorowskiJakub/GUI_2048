@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
         Title="WyborPlanszy" Height="450" Width="450">
-    <Grid Background="Silver">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/wyborPlanszy_background.png" TileMode="FlipXY"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
             <RowDefinition Height="40"/>
@@ -21,17 +24,44 @@
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" Text="Wybór planszy" TextAlignment="Center" VerticalAlignment="Top" Width="250"/>
+ 
+        <Button Click="Plansza4x4" Grid.Column="1" HorizontalAlignment="Left" Height="40" FontSize="20" Grid.Row="1" VerticalAlignment="Top" Width="70">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_button_4x4.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" FontSize="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="40" Margin="70,0,0,0">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_4x4.png"/>
+            </TextBlock.Background>
+        </TextBlock>
 
-        <Button Click="Plansza4x4" Content="4 x 4" Grid.Column="1" HorizontalAlignment="Left" Height="30" FontSize="20" Margin="10,5,0,5" Grid.Row="1" VerticalAlignment="Top" Width="60"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="1" FontSize="15" TextWrapping="Wrap" Text="Standardowy rozmiar" VerticalAlignment="Top"/>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Height="40" FontSize="20" Grid.Row="3" VerticalAlignment="Top" Width="70" Click="Plansza6x6">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_button_6x6.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="70,0,0,0" Grid.Row="3" FontSize="15" TextWrapping="Wrap"  VerticalAlignment="Top" Width="180" Height="40">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_6x6.png"/>
+            </TextBlock.Background>
+        </TextBlock>
 
-        <Button Content="6 x 6" Grid.Column="1" HorizontalAlignment="Left" Height="30" FontSize="20" Margin="10,5,0,5" Grid.Row="3" VerticalAlignment="Top" Width="60" Click="Plansza6x6"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="3" FontSize="15" TextWrapping="Wrap" Text="Niestandardowy rozmiar" VerticalAlignment="Top"/>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Height="40" FontSize="20" Grid.Row="5" VerticalAlignment="Top" Width="70" Click="Plansza8x8">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_button_8x8.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="70,0,0,0" Grid.Row="5" FontSize="15" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="180">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_8x8.png"/>
+            </TextBlock.Background>
+        </TextBlock>
 
-        <Button Content="8 x 8" Grid.Column="1" HorizontalAlignment="Left" Height="30" FontSize="20" Margin="10,5,0,5" Grid.Row="5" VerticalAlignment="Top" Width="60" Click="Plansza8x8"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="5" FontSize="15" TextWrapping="Wrap" Text="Niestandardowy rozmiar" VerticalAlignment="Top"/>
-
-        <Button Click="wyjscie" Content="Powrót" HorizontalAlignment="Left"  Margin="80,40,0,0" Grid.Row="6" Height="30" FontSize="20" VerticalAlignment="Top" Width="95" Grid.Column="1"/>
+        <Button Click="wyjscie" HorizontalAlignment="Left"  Margin="0,33,0,0" Grid.Row="6" Height="46" FontSize="20" VerticalAlignment="Top" Width="250" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/WyborPlanszy_button_powrot.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

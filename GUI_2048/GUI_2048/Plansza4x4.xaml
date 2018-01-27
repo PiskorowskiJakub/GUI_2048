@@ -5,34 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
-        Title="Plansza4x4" Height="500" Width="500"
+        Title="Plansza4x4" Height="530" Width="530"
         KeyDown="KeyDown_Event">
 
-    <Grid Background="Silver">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Plansza4x4_background.png" TileMode="FlipXY"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="300">
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="308">
 
             </RowDefinition>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="19"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="109"/>
             <ColumnDefinition Width="300"/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="113"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="1" Foreground="DarkGreen" FontSize="35" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="300"><Run Text="2048 = "/><Span><Run Text="2"/></Span><Run Text="11" Typography.Variants="Superscript"/><Run Text="= 2 MB"/></TextBlock>
 
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Row="1" FontSize="11" TextAlignment="Center" Width="100" TextWrapping="Wrap" VerticalAlignment="Top" Grid.RowSpan="2">
-            <Run Text="Created by:"/><LineBreak/>
-            <Run Text="Jakub"/><LineBreak/>
-            <Run Text="Piskorowski"/>
-        </TextBlock>
-        <Button Click="Wyjscie" Content="Wyjscie" HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="5" Height="30" FontSize="20" VerticalAlignment="Top" Width="95" Grid.Column="2"/>
+
+        <Button Click="Wyjscie" Margin="0,10,5,0" Grid.Row="5" Height="30" FontSize="20" VerticalAlignment="Top" Grid.Column="2">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/Plansza4x4_button_wyjscie.png"/>
+            </Button.Background>
+        </Button>
 
         <Border Grid.Column="1" Grid.Row="3">
             <Grid Grid.Column="1" HorizontalAlignment="Left" Height="300" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="300" Background="White">

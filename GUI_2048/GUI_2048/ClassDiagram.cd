@@ -40,23 +40,23 @@
   <Class Name="GUI_2048.Plansza4x4" BaseTypeListCollapsed="true">
     <Position X="5.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACADAAIAAAAAAARAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>ACADAAIAAAAAAERAAABAAAAAAAAAAAAAAAAAAKAAAAA=</HashCode>
       <FileName>Plansza4x4.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Plansza6x6" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="7.25" Width="1.5" />
+    <Position X="5.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACADAAAAAAACAARAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>ACADAAAAAAACAERAAABAAAAAAAAAAAAAAAAAAKAAAAA=</HashCode>
       <FileName>Plansza6x6.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="GUI_2048.Plansza8x8" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="10.75" Width="1.5" />
+    <Position X="5.75" Y="11.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACADAAAAAAACAARAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>ACADAAAAAAACAERAAABAAAAAAAAAAAAAAAAAAKAAAAA=</HashCode>
       <FileName>Plansza8x8.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -87,7 +87,7 @@
   <Class Name="GUI_2048.Languages.ResourceMain" Collapsed="true">
     <Position X="13.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAREAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAIAACAAAAAAAAABEAAAgQAAAAAAAAAIAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="GUI_2048.Properties.Resources" Collapsed="true">

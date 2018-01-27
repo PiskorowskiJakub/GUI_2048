@@ -6,10 +6,14 @@
         xmlns:local="clr-namespace:GUI_2048"
         mc:Ignorable="d"
         xmlns:resx="clr-namespace:GUI_2048"
-        Title="MainWindow" Height="450" Width="450">
-    <Grid Background="Silver">
+        Title="MainWindow" Height="460" Width="470">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/MainWindow_background.png" TileMode="FlipXY"/>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="130"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="10"/>
             <RowDefinition Height="40"/>
@@ -17,24 +21,47 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="10"/>
             <RowDefinition Height="40"/>
-            <RowDefinition Height="110"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="125"/>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="125"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="200"><Run Text="2048 = "/><Span><Run Text="2"/></Span><Span Typography.Variants="Superscript"><Run Text="11"/></Span><LineBreak/><Run/></TextBlock>
-        <Button Click="start" Content="Start" Grid.Column="1" Margin="40,5,0,5" Grid.Row="1" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
-        <Button Click="sterowanie" Content="Sterowanie" Grid.Column="1" Margin="40,5,0,5" Grid.Row="3" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
-        <Button Click="informacje" Content="Informacje" Grid.Column="1" Margin="40,5,0,5" Grid.Row="5" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
-        <Button Click="wyjscie" Content="Wyjście" Grid.Column="1" Margin="40,5,0,5" Grid.Row="7" Width="120" Height="30" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661"/>
+      <!--  <TextBlock Grid.Column="1" Foreground="DarkGreen" FontSize="30" HorizontalAlignment="Left" Margin="00,80,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="200"><Run Text="2048 = "/><Span><Run Text="2"/></Span><Span Typography.Variants="Superscript"><Run Text="11"/></Span><LineBreak/><Run/></TextBlock> -->
+        <Button Click="start" Grid.Column="1" Margin="0,0,0,0" Grid.Row="1" Width="200" Height="40" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661" Foreground="White">
+            <Button.ContextMenu>
+                <ContextMenu/>
+            </Button.ContextMenu>
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/MainWindow_button_start.png"/>
+            </Button.Background>
+        </Button>
+        <Button Click="sterowanie" Grid.Column="1" Margin="0,0,0,0" Grid.Row="3" Width="200" Height="40" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661">
+            <Button.ContextMenu>
+                <ContextMenu/>
+            </Button.ContextMenu>
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/MainWindow_button_sterowanie.png"/>
+            </Button.Background>
+        </Button>
+        <Button Click="informacje" Grid.Column="1" Margin="0,0,0,0" Grid.Row="5" Width="200" Height="40" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661">
+            <Button.ContextMenu>
+                <ContextMenu/>
+            </Button.ContextMenu>
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/MainWindow_button_informacje.png"/>
+            </Button.Background>
+        </Button>
+        <Button Click="wyjscie" Grid.Column="1" Margin="0,0,0,0" Grid.Row="7" Width="200" Height="40" FontSize="20" HorizontalAlignment="Left" RenderTransformOrigin="0.228,0.661">
+            <Button.ContextMenu>
+                <ContextMenu/>
+            </Button.ContextMenu>
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/MainWindow_button_wyjscie.png"/>
+            </Button.Background>
+        </Button>
 
-
-        <Button Content="PL" Grid.Column="2" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top" Width="28"/>
-        <Button Content="EN" Grid.Column="2" HorizontalAlignment="Left" Margin="78,10,0,0" VerticalAlignment="Top" Width="29"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="Jezyk:" VerticalAlignment="Top" Width="35" RenderTransformOrigin="1.373,0.724"/>
-        
 
 
     </Grid>
