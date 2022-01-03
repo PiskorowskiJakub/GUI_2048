@@ -1,4 +1,5 @@
-﻿using System;
+﻿//  Created by Jakub Piskorowski on 20/05/2018
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,18 +21,6 @@ namespace GUI_2048
     /// </summary>
     public partial class Plansza6x6 : Window
     {
-        /*
-        public int pause; // zmienna tymczasowa
-        
-        public static int menu, sizeBoard;
-        public int button;             //klawisz
-        public int historyXcoordinate1, historyYcoordinate1;
-        public int historyXcoordinate2, historyYcoordinate2;
-        public static string exitt;
-  
-        */
-
-
 
         public System.Windows.Media.SolidColorBrush ChangeBackground(int a, int b)
         {
@@ -173,7 +162,7 @@ namespace GUI_2048
                         case 2048: if (checkAchiv == 3) { MessageBox.Show("Czy to już koniec?"); checkAchiv = 4; } break;
                         case 4096: if (checkAchiv == 4) { MessageBox.Show("Czy to jeszcze działa?"); checkAchiv = 5; } break;
                         case 8192: if (checkAchiv == 5) { MessageBox.Show("Pojawiam się i znikam. Taka rola magika"); checkAchiv = 6; } break;
-                        case 16384: if (checkAchiv == 6) { MessageBox.Show("„Ja tu byłem :D” – Jacob.exe"); checkAchiv = 7; } break;
+                        case 16384: if (checkAchiv == 6) { MessageBox.Show("„Ja tu byłem :D” – Jacob"); checkAchiv = 7; } break;
                         case 32768: if (checkAchiv == 7) { MessageBox.Show("Jestem farmerem!"); checkAchiv = 8; } break;
                         case 65536: if (checkAchiv == 8) { MessageBox.Show("Choćbym chodził ciemną doliną…"); checkAchiv = 9; } break;
                         case 131072: if (checkAchiv == 9) { MessageBox.Show("Wybraniec"); checkAchiv = 10; } break;
